@@ -99,9 +99,6 @@ class CatalaVictorEjercicio1 {
 
                     }
 
-
-
-
             }
         }
     }
