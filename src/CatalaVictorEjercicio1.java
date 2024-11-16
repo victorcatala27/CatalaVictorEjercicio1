@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class CatalaVictorEjercicio1 {
+class CatalaVictorEjercicio1 {
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
         Random random= new Random();
@@ -22,7 +22,7 @@ public class CatalaVictorEjercicio1 {
         }
         System.out.println("Por favor, introduce el número de columnas");
         while(!valorValidoColumnas){
-            if(input.hasNextInt(){
+            if(input.hasNextInt()){
                 columnas= input.nextInt();
                 valorValidoColumnas=true;
             }else{
