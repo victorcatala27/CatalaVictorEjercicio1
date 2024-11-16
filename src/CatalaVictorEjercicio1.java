@@ -30,5 +30,13 @@ class CatalaVictorEjercicio1 {
                 input.nextLine();
             }
         }
+        System.out.println("Número de columnas:"+columnas+"y filas:"+filas+"fueron ingresados correctamente");
+        int[][] matriz= new int[filas][columnas];                       //Sentencia para crear la matriz con los datos introducidos
+
+        for(int i=0;i<filas;i++){
+            for(int j=0;j<filas;j++ ){
+                matriz[i][j]= random.nextInt(9)+1;
+            }
+        }
     }
 }
