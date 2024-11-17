@@ -101,7 +101,6 @@ class CatalaVictorEjercicio1 {
                             input.next(); // Limpiar la entrada no válida
                         }
                         System.out.println("Índice de fila erróneo. Por favor, introduce un valor entre 0 y " + (filas - 1) + ":");
-
                     }
 
                     if(indiceFila>=0 && indiceFila<filas && indiceColumna>=0 && indiceColumna<columnas){
