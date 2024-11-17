@@ -15,9 +15,14 @@ class CatalaVictorEjercicio1 {
         while(!valorValidoFilas){                                       //Bucle para controlar valores compatibles con el programa
             if(input.hasNextInt()){
                 filas= input.nextInt();
-                valorValidoFilas=true;
+
+                if(filas>0){
+                    valorValidoFilas=true;
+                }else{
+                    System.out.println("Error. Por favor, introduce un número entero positivo");
+                }
             }else {
-                System.out.println("Valor incorrecto. Por favor, introduce un número entero");
+                System.out.println("Valor incorrecto. Por favor, introduce un número entero positivo");
                 input.nextLine();
             }
         }
@@ -25,9 +30,13 @@ class CatalaVictorEjercicio1 {
         while(!valorValidoColumnas){
             if(input.hasNextInt()){
                 columnas= input.nextInt();
-                valorValidoColumnas=true;
+                if(columnas>0){
+                    valorValidoColumnas=true;
+                }else{
+                    System.out.println("Error. Por favor, introduce un número entero positivo");
+                }
             }else{
-                System.out.println("Valor incorrecto. Por favor, introduce un número entero");
+                System.out.println("Valor incorrecto. Por favor, introduce un número entero poisitivo");
                 input.nextLine();
             }
         }
@@ -58,13 +67,14 @@ class CatalaVictorEjercicio1 {
                     System.out.println("La matriz generada es:");
                     for(int i=0;i<filas;i++){
                         for(int j=0; j<columnas;j++){
-                            System.out.println(matriz [i][j]);
+                            System.out.print(matriz [i][j]+ "\t");
                         }
                         System.out.println();
                     }
                     break;
                 case 2:
-                    int indiceFila=-1;
+
+                    int indiceFila;
                     System.out.println("Introduce el índice de la fila (de 0 a "+(filas-1)+"):");
                     while (true) {
                         if (input.hasNextInt()) { // Verifica si el valor ingresado es un entero
@@ -78,7 +88,7 @@ class CatalaVictorEjercicio1 {
                             System.out.println("Índice de fila erróneo. Por favor, introduce un valor entre 0 y " + (filas - 1) + ":");
 
                     }
-                    int indiceColumna= -1;
+                    int indiceColumna;
                     System.out.println("Introduce el índice de la columna (de 0 a "+(columnas-1)+"):");
 
                     while (true) {
@@ -125,9 +135,15 @@ class CatalaVictorEjercicio1 {
                             salirDelPrograma=true;
                         }
                     }else{
-                        System.out.println("Índices fuera de rango. Inténtalo de nuevo\n");
+                        System.out.println("Índice de columna erróneo. Por favor, introduce un valor entre 0 y " + (columnas - 1) + ":\n");
                     }
                     break;
+
+                case 0:
+                    salirDelPrograma=true;
+                    System.out.println("Saliendo del programa...");
+
+
 
 
             }
