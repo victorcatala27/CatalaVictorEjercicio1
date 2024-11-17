@@ -143,8 +143,6 @@ class CatalaVictorEjercicio1 {
                     System.out.println("Saliendo del programa...");
 
 
-
-
             }
         }
     }
