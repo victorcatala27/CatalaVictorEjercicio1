@@ -36,23 +36,23 @@ class CatalaVictorEjercicio1 {
                     System.out.println("Error. Por favor, introduce un número entero positivo");
                 }
             }else{
-                System.out.println("Valor incorrecto. Por favor, introduce un número entero poisitivo");
-                input.nextLine();
+                System.out.println("Valor incorrecto. Por favor, introduce un número entero positivo");
+                input.next();
             }
         }
         System.out.println("Número de columnas:" +columnas+" "+ "y filas:" +filas+" " +"fueron ingresados correctamente.\n");
 
         int[][] matriz= new int[filas][columnas];                       //Sentencia para crear la matriz con los datos introducidos
 
-        for(int i=0;i<filas;i++){
-            for(int j=0;j<filas;j++ ){
-                matriz[i][j]= random.nextInt(9)+1;
+        for(int i=0; i<filas; i++){
+            for(int j=0; j<columnas; j++){
+                matriz[i][j] = random.nextInt(9) + 1;
             }
         }
         boolean salirDelPrograma=false;
         while(!salirDelPrograma){
             System.out.println("A continuación, selecciona una opción\n");
-            System.out.println("Pulsa (1) para ver la Matriz generada a partir de los valores introducidos");
+            System.out.println("Pulsa (1) para ver la matriz generada a partir de los valores introducidos");
             System.out.println("Pulsa (2) para colocar una bomba");
             System.out.println("Pulsa (0) para salir del programa");
 
@@ -85,7 +85,7 @@ class CatalaVictorEjercicio1 {
                         }else{
                                 input.next(); // Limpiar la entrada no válida
                         }
-                            System.out.println("Índice de fila erróneo. Por favor, introduce un valor entre 0 y " + (filas - 1) + ":");
+                            System.out.println("Índice de fila erróneo. Por favor, introduce un valor entre 0 (incluido) y " + (filas - 1) + ":");
 
                     }
                     int indiceColumna;
@@ -100,7 +100,7 @@ class CatalaVictorEjercicio1 {
                         }else{
                             input.next(); // Limpiar la entrada no válida
                         }
-                        System.out.println("Índice de fila erróneo. Por favor, introduce un valor entre 0 y " + (filas - 1) + ":");
+                        System.out.println("Índice de columna erróneo. Por favor, introduce un valor entre 0 (incluido)  y " + (filas - 1) + ":");
                     }
 
                     if(indiceFila>=0 && indiceFila<filas && indiceColumna>=0 && indiceColumna<columnas){

@@ -1,1 +1,7 @@
-Este es mi primer ejercicio para la asignatura de Programación Estructurada. ¡Espero que os guste!
+Este es mi primer ejercicio para la asignatura de Programación Estructurada.
+En este ejercicio se solicitan al usuario dos números enteros positivos, los cuales conformarán una matriz.
+Una vez comprobado que los valores son válidos serán almacenados, y se dará paso a un menú de opciones.
+A partir de dicho menú, se podrán efectuar acciones, siendo la más destacable la de poner una bomba en unas coordenadas.
+El programa ejecutará tal acción y devolverá un valor resultante de la suma de los números comprendidos por dichas coordenadas
+Después de la suma, todos esos números serán igualados a 0, y el programa no acabará a menos que todos los valores sean 0 o el usuario salga del programa
+¡Espero que os guste!
